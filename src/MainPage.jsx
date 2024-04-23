@@ -7,11 +7,11 @@ const MainPage = () => {
 
   const handleToggleMood = () => {
     setToggleMood((prevToggle) => !prevToggle);
-    // setToggleMood(!toggleMood)
+     //setToggleMood(!toggleMood)
   };
 
   return (
-    <div>
+    <div className="first">
       <Text mood={toggleMood ? "sad" : "happy"} />
       <button onClick={handleToggleMood}>Change my mood</button>
     </div>
